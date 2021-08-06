@@ -1,0 +1,9 @@
+name: discordLinker
+version: 1.1
+author: xela
+main: me.xela.discord.Main
+description: a simple plugin that outputs something
+commands:
+  discord:
+    aliases: [discordlink]
+    description: an alias
