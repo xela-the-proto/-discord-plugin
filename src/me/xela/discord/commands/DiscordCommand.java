@@ -26,7 +26,7 @@ public class DiscordCommand implements CommandExecutor {
         Player p = (Player) commandSender;
 
         if (p.hasPermission("discord.use")){
-            p.sendMessage(utils.chat(plugin.getConfig().getString("messageToPlayer").replace("<player>",p.getName())));
+            p.sendMessage(utils.chat(plugin.getConfig().getString("messageToPlayer").replace("%player%",p.getName())));
             return true;
         }else{
             p.sendMessage("you do not have the permission to execute this command");
